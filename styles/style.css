@@ -94,3 +94,12 @@ body, ul {
   border-radius: 15px;
   text-decoration: none;
 }
+
+/* Hero */
+#hero {
+  background-color: #0D1728;
+  height: 100vh;
+
+  background-image: url(../images/background-hero.png);
+  background-position: -295px -449px;
+}
