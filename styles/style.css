@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* CSS Reset */
-body, ul, ol, h1, h2, h3, h4, p, form {
+body, ul, ol, h1, h2, h3, h4, p, form, a {
   margin: 0;
   padding: 0;
 }
@@ -520,10 +520,10 @@ body {
   border-radius: 24px;
   display: flex;
   flex-direction: column;
+  border: 1px solid transparent;
 }
 
 #pricing .container:nth-child(2) .card.recommended {
-  border: 1px solid #1681FE;
   background-image: url(../images/procedure-pattern.png);
   background-repeat: no-repeat;
 }
@@ -573,6 +573,16 @@ body {
 #pricing .container:nth-child(2) .card.premium .header .details h3,
 #pricing .container:nth-child(2) .card.premium a {
   color: #448C74;
+}
+
+#pricing .container:nth-child(2) .card.starter:hover {
+  border: 1px solid #EDCB50;
+}
+#pricing .container:nth-child(2) .card.bussiness:hover {
+  border: 1px solid #1681FE;
+}
+#pricing .container:nth-child(2) .card.premium:hover {
+  border: 1px solid #448C74;
 }
 
 #pricing .container:nth-child(2) .card .header .details h3 {
@@ -692,6 +702,7 @@ body {
 }
 
 #testimonial .container:nth-child(2) {
+  z-index: 0;
   position: relative;
 }
 
@@ -706,7 +717,8 @@ body {
   padding: 10px;
   transform: translate(-50% -50%);
   border-radius: 10px;
-
+  z-index: 1;
+  cursor: pointer;
 }
 
 #testimonial .container:nth-child(2) .previous {
@@ -752,7 +764,7 @@ body {
 }
 
 #testimonial .container:nth-child(2) .card .info .line {
-  width: 189px;
+  width: 190px;
   border-top: 1px solid #D4D6D9;;
   margin-bottom: 24px;
 }
@@ -778,8 +790,9 @@ body {
   width: 100%;
   display: flex;
   overflow: hidden;
-  padding: 90px 0 0 60px;
+  padding: 64px 0 0 60px;
   justify-content: space-between;
+  margin: 0 12px;
 }
 
 #app .container .card .col-5 {
@@ -819,6 +832,83 @@ body {
 }
 
 #app .container .card .col img {
-  margin-left: -30px;
-  margin-bottom: -10px;
+  margin-left: -40px;
+  margin-bottom: -6px;
+}
+
+/* Footer */
+#footer {
+  border-top: 1px solid #EAEBEC;
+}
+
+#footer .container {
+  justify-content: space-between;
+}
+
+#footer .container footer {
+  padding-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#footer .container footer .about img {
+  margin-bottom: 16px;
+}
+
+#footer .container footer .about p {
+  font-family: 'Anybody';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #7F848D;
+  margin-bottom: 24px;
+}
+
+#footer .container footer .about .copyright {
+  font-family: 'Anybody';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #293241;
+}
+
+#footer .container footer .links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#footer .container footer .links a {
+  font-family: 'Anybody';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px; 
+  color: #7F848D;
+  text-decoration: none;
+}
+
+#footer .container footer .social p {
+  font-family: 'Anybody';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  margin-bottom: 18px;
+  color: #293241;
+}
+
+#footer .container footer .social .social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+#footer .container footer .social .social-icons a {
+  padding: 12px;
+  background: #EAEBEC;
+  border-radius: 8px;
 }
