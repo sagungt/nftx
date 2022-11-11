@@ -110,7 +110,8 @@ body {
   padding: 0 12px;
 }
 
-#navbar .container .button a {
+#navbar .container .button a,
+#app .container .card .col a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -431,7 +432,7 @@ body {
 } */
 
 /* Analytise list with pseudo element */
-/* #analytise .container .col .list {
+#analytise .container .col .list {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -455,10 +456,10 @@ body {
   position: absolute;
   top: -10px;
   left: -48px;
-} */
+}
 
 /* Analytise with image */
-#analytise .container .col .list {
+/* #analytise .container .col .list {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -479,7 +480,7 @@ body {
   font-size: 18px;
   line-height: 19px;
   color: #D4D6D9;
-}
+} */
 
 /* Pricing */
 #pricing {
@@ -657,4 +658,167 @@ body {
 
 #pricing .container:nth-child(2) .card.premium a {
   border: 1px solid #448C74;
+}
+
+/* Testimonial */
+#testimonial {
+  padding: 150px 0;
+}
+
+#testimonial .container:nth-child(1) {
+  flex-direction: column;
+}
+
+#testimonial .container:nth-child(1) h2 {
+  font-family: 'Anybody';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 50px;
+  text-align: center;
+  color: #293241;
+  margin-bottom: 32px;
+}
+
+#testimonial .container:nth-child(1) p {
+  font-family: 'Anybody';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 25px;
+  text-align: center;
+  color: #7F848D;
+  margin-bottom: 32px;
+}
+
+#testimonial .container:nth-child(2) {
+  position: relative;
+}
+
+#testimonial .container:nth-child(2) button {
+  border: none;
+}
+
+#testimonial .container:nth-child(2) .previous,
+#testimonial .container:nth-child(2) .next {
+  position: absolute;
+  top: 50%;
+  padding: 10px;
+  transform: translate(-50% -50%);
+  border-radius: 10px;
+
+}
+
+#testimonial .container:nth-child(2) .previous {
+  left: 12px;
+  background: rgba(22, 129, 254, 0.1);
+}
+
+#testimonial .container:nth-child(2) .next {
+  right: 12px;
+  transform: translate(-50% -50%);
+  background: #1C51FD;
+  color: #FFFFFF;
+}
+
+#testimonial .container:nth-child(2) .card {
+  background: #F0F9FF;
+  border-radius: 18px;
+  padding: 32px;
+  align-items: center;
+  display: flex;
+  gap: 36px;
+  width: calc(100% * 5 / 6 - 40px);
+}
+
+#testimonial .container:nth-child(2) .card .info h3 {
+  font-family: 'Anybody';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 25px;
+  color: #212834;
+  margin-bottom: 20px;
+}
+
+#testimonial .container:nth-child(2) .card .info h4 {
+  font-family: 'Anybody';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  color: #7F848D;
+  margin-bottom: 20px;
+}
+
+#testimonial .container:nth-child(2) .card .info .line {
+  width: 189px;
+  border-top: 1px solid #D4D6D9;;
+  margin-bottom: 24px;
+}
+
+#testimonial .container:nth-child(2) .card .info p {
+  font-family: 'Anybody';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  color: #293241;
+  margin-bottom: 16px;
+}
+
+/* App */
+#app {
+  margin-bottom: 294px;
+}
+
+#app .container .card {
+  background: #293241;
+  border-radius: 40px;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  padding: 90px 0 0 60px;
+  justify-content: space-between;
+}
+
+#app .container .card .col-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#app .container .card .col h2 {
+  font-family: 'Anybody';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 63px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+#app .container .card .col p {
+  font-family: 'Anybody';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #EAEBEC;
+  margin-bottom: 32px;
+  vertical-align: middle;
+}
+
+#app .container .card .col a {
+  width: max-content;
+}
+
+#app .container .card .col a::after {
+  content: url(../images/icons/right-arrow.svg);
+  height: 24px;
+}
+
+#app .container .card .col img {
+  margin-left: -30px;
+  margin-bottom: -10px;
 }
