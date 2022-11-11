@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* CSS Reset */
-body, ul, ol, h1, h2, h3, p, form {
+body, ul, ol, h1, h2, h3, h4, p, form {
   margin: 0;
   padding: 0;
 }
@@ -385,7 +385,6 @@ body {
 #analytise {
   padding: 150px 0;
   background: #293241;
-
 }
 
 #analytise .container .col > span {
@@ -480,4 +479,182 @@ body {
   font-size: 18px;
   line-height: 19px;
   color: #D4D6D9;
+}
+
+/* Pricing */
+#pricing {
+  background: #F0F9FF;
+  padding: 150px 0;
+}
+
+#pricing .container:nth-child(1) {
+  flex-direction: column;
+}
+
+#pricing .container:nth-child(1) h2 {
+  font-family: 'Anybody';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 50px;
+  text-align: center;
+  color: #293241;
+  margin-bottom: 32px;
+}
+
+#pricing .container:nth-child(1) p {
+  font-family: 'Anybody';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 25px;
+  text-align: center;
+  color: #7F848D;
+  margin-bottom: 74px;
+}
+
+#pricing .container:nth-child(2) .card {
+  padding: 32px;
+  background: #FFFFFF;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+#pricing .container:nth-child(2) .card.recommended {
+  border: 1px solid #1681FE;
+  background-image: url(../images/procedure-pattern.png);
+  background-repeat: no-repeat;
+}
+
+#pricing .container:nth-child(2) .card.recommended .header {
+  position: relative;
+}
+
+#pricing .container:nth-child(2) .card.recommended .header .details h3::after {
+  content: 'Recommended';
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 6px 16px;
+  background-color: #1681FE;
+  border-radius: 8px;
+  color: #FFFFFF;
+}
+
+#pricing .container:nth-child(2) .card .header {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+#pricing .container:nth-child(2) .card .header {
+  border-bottom: 1px solid #EAEBEC;;
+  padding-bottom: 32px;
+  margin-bottom: 50px;
+}
+
+#pricing .container:nth-child(2) .card.starter .header .details h3,
+#pricing .container:nth-child(2) .card.starter a {
+  color: #EDCB50;
+}
+
+#pricing .container:nth-child(2) .card.bussiness .header .details h3,
+#pricing .container:nth-child(2) .card.bussiness a {
+  color: #1681FE;
+}
+
+#pricing .container:nth-child(2) .card.premium .header .details h3,
+#pricing .container:nth-child(2) .card.premium a {
+  color: #448C74;
+}
+
+#pricing .container:nth-child(2) .card .header .details h3 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: left;
+}
+
+#pricing .container:nth-child(2) .card .header .details .price {
+  display: flex;
+  align-items: flex-end;
+}
+
+#pricing .container:nth-child(2) .card .header .details .price h4 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 42px;
+  color: #293241;
+}
+
+#pricing .container:nth-child(2) .card .header .details .price h4 span {
+  font-size: 42px;
+}
+
+#pricing .container:nth-child(2) .card .header .details .price p {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #545B67;
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+
+#pricing .container:nth-child(2) .card .content .list{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+#pricing .container:nth-child(2) .card .content .list .list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#pricing .container:nth-child(2) .card .content .list .list-item span {
+  font-family: 'Anybody';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  color: #293241;
+}
+
+#pricing .container:nth-child(2) .card a {
+  padding: 14px 24px;
+  background-color: #FFF;
+  border-radius: 12px;
+  text-decoration: none;
+  font-family: 'Anybody';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  line-height: 17px;
+}
+
+#pricing .container:nth-child(2) .card.starter a {
+  border: 1px solid #EDCB50;
+}
+
+#pricing .container:nth-child(2) .card.bussiness a {
+  border: 1px solid #1681FE;
+}
+
+#pricing .container:nth-child(2) .card.premium a {
+  border: 1px solid #448C74;
 }
