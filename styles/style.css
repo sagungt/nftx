@@ -342,3 +342,142 @@ body {
   color: #D4D6D9;
   margin: 0;
 }
+
+/* Tool */
+#tool {
+  margin-bottom: 192px;
+}
+
+#tool .container {
+  justify-content: space-between;
+}
+
+#tool .container .col {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#tool .container .col img:nth-child(2) {
+  margin-left: 48px;
+}
+
+#tool .container .col h2 {
+  font-family: 'Anybody';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 130%;
+  color: #293241;
+}
+
+#tool .container .col p {
+  font-family: 'Anybody';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #7F848D;
+}
+
+#analytise {
+  padding: 150px 0;
+  background: #293241;
+
+}
+
+#analytise .container .col > span {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #293241;
+  background: #EDCB50;
+  border-radius: 8px;
+  padding: 6px 16px;
+}
+
+#analytise .container .col h2 {
+  font-family: 'Anybody';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+/* Analytise list with unordered list */
+/* #analytise .container .col ul {
+  list-style-image: url(../images/Archery.svg);
+  list-style-position: inside;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#analytise .container .col ul li {
+  font-family: 'Anybody';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19px;
+  color: #D4D6D9;
+  margin-bottom: 16px;
+  height: 32px;
+} */
+
+/* Analytise list with pseudo element */
+/* #analytise .container .col .list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#analytise .container .col .list span {
+  font-family: 'Anybody';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19px;
+  color: #D4D6D9;
+  position: relative;
+  height: 32px;
+  margin-left: 48px;
+}
+
+#analytise .container .col .list span::before {
+  content: url(../images/Archery.svg);
+  margin-right: 16px;
+  position: absolute;
+  top: -10px;
+  left: -48px;
+} */
+
+/* Analytise with image */
+#analytise .container .col .list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#analytise .container .col .list .list-item {
+  display: flex;
+  grid-area: 16px;
+  height: 32px;
+  align-items: center;
+  gap: 16px;
+}
+
+#analytise .container .col .list .list-item span {
+  font-family: 'Anybody';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19px;
+  color: #D4D6D9;
+}
