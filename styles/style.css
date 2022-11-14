@@ -704,6 +704,8 @@ body {
 #testimonial .container:nth-child(2) {
   z-index: 0;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 #testimonial .container:nth-child(2) button {
@@ -777,6 +779,23 @@ body {
   line-height: 26px;
   color: #293241;
   margin-bottom: 16px;
+}
+
+#testimonial .container:nth-child(2) .page {
+  display: flex;
+  gap: 8px;
+  margin-top: 32px;
+}
+
+#testimonial .container:nth-child(2) .page .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #EAEBEC;
+}
+
+#testimonial .container:nth-child(2) .page .dot.active {
+  background: #1C51FD;
 }
 
 /* App */
